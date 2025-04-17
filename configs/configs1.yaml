@@ -1,0 +1,17 @@
+## data configuration
+data_dir: data/gbh_old/
+data_split_dirs: "data/split1"
+test_data_split_dirs: ["data/MEL+", "data/LOS+", "data/SAO+", "data/MUC+", "data/GUA+", "data/split1+", "data/split2+"]
+
+patch_size: 4
+hflip: False
+normalize: True
+
+## training configuration
+seed: 42
+device: cuda
+checkpoint_dir: checkpoints
+
+log_interval: 50
+checkpoint_interval: 100 
+patience: 20
